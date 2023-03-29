@@ -112,7 +112,7 @@ nav{
     padding: 0;
     overflow: hidden;
     text-align: center;
-    padding-left: 80px;
+    padding-left: 50px;
   }
   
   #bottomNav li {
@@ -181,7 +181,7 @@ nav{
     margin-bottom: 40px;
   }
 
-  .middlePart_5 h2{
+  .middlePart_5 h3{
     text-align: center;
   }
 
@@ -204,8 +204,12 @@ nav{
   }
   .social {
     display: flex;
-    gap: 20px;
     margin: auto;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+  }
+  .social img{
     width: 100%;
   }
  
@@ -213,6 +217,11 @@ nav{
     list-style-type: none;
     line-height: 30px;
     color: rgb(70, 69, 69);
+  }
+
+  .bottomPart li a{
+    text-decoration: none;
+    color:rgb(70, 69, 69);
   }
 
   .bottomPart ul{
@@ -263,14 +272,12 @@ nav{
         font-size: 40px;
       }
 
-      .middlePart_2 >div , .middlePart_5 > div{
-        font-size: 10px;
-      }
 
       .bottomPart li{
         line-height: 20px;
       }
 
+    
       .social{
         gap: 10px;
       }
