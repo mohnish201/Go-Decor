@@ -62,13 +62,12 @@ nav{
     width: 20%;
     align-items: center;
     box-sizing: border-box;
-    border: 2px solid black;
 }
 
 
 .leftmiddlenav img{
-    width: 70%;
-    height: 30%;
+    width: 60%;
+
 }
 
 .searchmiddlenav{
@@ -77,28 +76,25 @@ nav{
     width: 50%;
     padding: 10px;
     align-items: center;
-    border: 2px solid black;
 }
 
 .searchmiddlenav img{
     width: 3%;
-    height: 60%;
 
 }
 
 .rightmiddlenav{
-    display: flex;
-    width: 25%;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 20%;
+    gap: 50px;
     align-items: center;
-    border: 2px solid black;
     box-sizing: border-box;
-    padding-left: 120px;
+    padding-left: 20px;
 }
 
 .rightmiddlenav img{
-    width: 80%;
-    height: 60%;
+    width: 90%;
 }
 
 #bottomNav{
@@ -129,6 +125,10 @@ nav{
   .topPart{
     text-align: center;
     margin-bottom: 40px;
+  }
+
+  .topPart img{
+    width: 100%;
   }
 
   .middlePart_1, .middlePart_4{
@@ -179,6 +179,9 @@ nav{
     margin-top: 30px;
     text-align: center;
     margin-bottom: 40px;
+  }
+  .middlePart_3 img{
+    width: 100%;
   }
 
   .middlePart_5 h3{
@@ -251,13 +254,65 @@ nav{
     background-color: rgb(49, 49, 225);
   }
   
+  @media only screen and (min-width:200px) and (max-width:399px){
+    .middlePart_1{
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-  @media only screen and (min-width:400px) and (max-width:900px){
-   
+    .middlePart_4{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .middlePart_2 >div , .middlePart_5 > div{ 
+      grid-template-columns: repeat(2, 1fr);
+      
+    }
+    #bottomNav{
+      display: none;
+    }
+
+    #middlemiddleNav img{
+        width: 20%;
+    }
+
+    .bottomPart{
+      display: none;
+    }
+
+    .middlePart_2 h1 , .middlePart_5 h1{
+      font-size: 30px;
+    }
+
+    #search{
+      width: 50%;
+      font-size: 10px;
+      padding: 5px;
+      
+  }
+  }
+
+  @media only screen and (min-width:400px) and (max-width:1200px){
+
+    #topRight{
+      font-size: 12px;
+    }
+    .rightmiddlenav{
+      font-size: 10px;
+    }
+
+    .rightmiddlenav img{
+      width:100%;
+    }
+
       .topPart img {
         width: 100%;
       }
      
+      #search{
+        width: 60%;
+        font-size: 15px;
+        padding: 5px;
+        
+    }
       .middlePart_3 img{
         width: 100%;
       }
