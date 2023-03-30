@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link rel="stylesheet" href="/css files/login.css">
+</head>
+<body>
+    <div id="cont">
+        <h1>Login to your account</h1>
+        <form action="/html files/index.html">
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td> <input type="email" placeholder="Enter username or email" id="email"></td>
+                   
+                </tr>
+
+                <tr>
+                    <td><label for="Passowrd">Password:</label></td>
+                    <td><input type="password" placeholder="Enter Password" id="password"></td>
+                
+                   
+                </tr>
+            </table>
+
+            <input type="submit" id="submit">
+            
+        </form>
+    </div>
+</body>
+
+<script>
+
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    let form= document.querySelector("form");
+    let submit = document.getElementById("submit")
+    let RegisteredUserData = JSON.parse(localStorage.getItem("userData"));
+    
+    form.addEventListener("submit", function(){
+        let flag= false;
+        RegisteredUserData.forEach((el)=>{
+      
+        if(email.value === el.email && password.value === el.password){
+            flag= true
+        }
+        else{
+    
+           flag = false
+        }
+})
+        if(flag){
+           
+            alert("Login Successful");
+           
+        }
+        else{
+      
+            alert("Wrong Credentials")
+            
+        }
+    })
+
+    
+</script>
+</html>
