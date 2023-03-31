@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/css files/cart.css">
+</head>
+<body>
+    <nav>
+        <div id="topNav">
+            <div id="topLeft">
+                <img src="/images/GO DECOR normal.png" alt="">
+            </div>
+
+            <div id="topRight">
+                <img src="/images/icons8-deliver-food-50.png" alt="delivery">
+                <h5>Same Day Delivery| order by 2pm</h5>
+
+                <img src="/images/icons8-online-store-50.png" alt="store">
+                <h5>Store Pickup| Find a store</h5>
+            </div>
+        </div>
+
+        <div id="middleNav">
+
+            <div class="leftmiddlenav">
+               <a href=""><img src="/images/icons8-menu-rounded-50.png" alt="menu"></a>
+               <img src="/images/GO DECOR (1).gif" alt="">
+            </div>
+
+            <div class="searchmiddlenav">
+                <img src="/images/icons8-search-30.png" alt="search">
+                <input type="search" id="search" placeholder="What product can we help you find?">
+            </div>
+
+            <div class="rightmiddlenav">
+                <a href=""><h3>Sign in</h3></a>
+                <a href="/html files/signup.html"><img src="/images/user (1).png" alt="user"></a>
+                <a href="/html files/cart.html"><img src="/images/shopping-cart (2).png" alt="cart"></a>
+            </div>
+
+        </div>
+
+        <div id="bottomNav">
+            <ul>
+                <li><a href="">deals</a></li>
+                <li><a href="">bedding</a></li>
+                <li><a href="">bath</a></li>
+                <li><a href="">kitchen</a></li>
+                <li><a href="">dining</a></li>
+                <li><a href="">storage & cleaning</a></li>
+                <li><a href="">home decor</a></li>
+                <li><a href="">curtains & window</a></li>
+                <li><a href="/html files/furniture.html">furniture</a></li>
+                <li><a href="">helath & beauty</a></li>
+                <li><a href="">outdoor</a></li>
+                <li><a href="">more</a></li>
+                <li><a href="">gifts</a></li>
+                <li><a href="">registry</a></li>
+                <li><a href="">baby & kids</a></li>
+                <li><a href="">college</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <h1>Your Cart (<span id="quantity">0</span>)</h1>
+    <div id="container">
+           
+        <div id="leftCont">
+
+            <div id="top">
+             
+    
+            <div id="leftTopPart">
+                <img src="/images/shipped.png" alt="">
+                <h2>Standard Shipping</h2>
+            </div>
+    
+            <div id="rightTopPart">
+                <p>Free</p>
+                <img src="/images/icons8-info-32.png" alt="">
+            </div>
+        </div>
+
+        <hr>
+         
+        <div id="cards">
+
+        </div>
+   </div>
+        <div id="rightCont">
+     
+            <h1>Order Summary</h1>
+            <hr>
+            <p>You have <b>1 coupon(s)</b> available</p>
+
+            <button id="couponBtn">Apply Coupons</button>
+            <br>
+            <hr> 
+            <table>
+                <tr>
+                    <td>Order Subtotal</td>
+                    <td id="subtotal">0</td>
+                </tr>
+
+                <tr>
+                    <td>Shipping Details</td>
+                    <td>Free</td>
+                </tr>
+
+                <tr>
+                    <td><h2>Pre-Tax Total</h2></td>
+                    <td><h2  id="total"></h2></td>
+  
+                </tr>
+            </table>
+
+            <hr>
+            <br>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+</body>
+
+<script src="/script/cart.js"></script>
+</html>
+

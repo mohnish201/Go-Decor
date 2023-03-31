@@ -19,6 +19,15 @@ body{
     color: rgb(34, 34, 101);
 }
 
+#logo{
+    margin: auto;
+    text-align: center;
+}
+#logo img {
+    width: 30%;
+    padding-right: 30px;
+}
+
 table{
     font-size: 25px;
 }
