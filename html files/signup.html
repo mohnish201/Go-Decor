@@ -14,71 +14,40 @@
             <img src="/images/GO DECOR (1).gif" alt="logo" >
         </div>
         <h1>Sign up to Create Account</h1>
-        <form>
-  <table>
-    <tr>
+
+        <form action="/html files/login.html" method="post">
+        <table>
+        <tr>
         <td><label for="Name">Name:</label></td>
         <td><input type="text" placeholder="Enter Name" id="name"></td>
-    </tr>
+       </tr>
 
-    <tr>
+       <tr>
         <td><label for="email">Email:</label></td>
         <td> <input type="email" placeholder="Enter email" id="email"></td>
-    </tr>
+       </tr>
 
-    <tr>
+       <tr>
         <td>
             <label for="CreatePassword">Create Password:</label>
         </td>
         <td>
             <input type="password" placeholder="Create Passowrd" id="password">
         </td>
-    </tr>
+       </tr>
 
-    <tr>
+       <tr>
         <td><label for="Re-EnterPassword">Confirm Password:</label></td>
         <td><input type="password" placeholder="Re-enter Passowrd" id="confirmPassword"></td>
-    </tr>
-  </table>
-  <input type="submit" id="submit">  
+       </tr>
+       </table>
+           <input type="submit" id="submit">
         </form>
 
         <h3>Already have account?<a href="/html files/login.html"><span>Login</span> </a></h3>
            </div>
 </body>
 
-<script>
-
-let form = document.querySelector("form")
-let name = document.getElementById("name")
-let email = document.getElementById("email");
-let password = document.getElementById("password");
-let para = document.querySelector("p")
-let confirmPassowrd = document.getElementById("confirmPassword")
-
-let UserData=JSON.parse(localStorage.getItem("userData")) ||[]
-
-
-form.addEventListener("submit", function(e){
-   e.preventDefault();
-    let UserObj={
-    name:name.value,
-    email:email.value,
-    Password:confirmPassowrd.value
-}
-    UserData.push(UserObj)
-
-    if(password.value===confirmPassowrd.value){
-        localStorage.setItem("userData", JSON.stringify(UserData))
-    }
-    else{
-        alert("Password is not matching. Retype Confirm Password")
-    }
-
-     form.action = "/html files/login.html"
-})
-
-
-</script>
+<script src="/script/signup.js"></script>
 </html>
 
