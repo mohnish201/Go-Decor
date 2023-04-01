@@ -27,7 +27,8 @@
 
             <div class="leftmiddlenav">
                <a href=""><img src="/images/icons8-menu-rounded-50.png" alt="menu"></a>
-               <img src="/images/GO DECOR (1).gif" alt="">
+               <a href="./index.html"><img src="/images/GO DECOR (1).gif" alt=""></a> 
+               <a href="/html files/index.html" style="text-decoration: none; color: black;"><h3>Home</h3></a>
             </div>
 
             <div class="searchmiddlenav">
@@ -36,9 +37,9 @@
             </div>
 
             <div class="rightmiddlenav">
-                <a href=""><h3>Sign in</h3></a>
-                <a href="/html files/signup.html"><img src="/images/user (1).png" alt="user"></a>
-                <a href="/html files/cart.html" target="_blank"><img src="/images/shopping-cart (2).png" alt="cart"></a>
+                <a href="/html files/signup.html" style="text-decoration: none; color: black;"><h3>Sign up</h3></a>
+                <a href="/html files/login.html"><img src="/images/user (1).png" alt="user"></a>
+                <a href="/html files/cart.html"><img src="/images/shopping-cart (2).png" alt="cart"></a>
             </div>
 
         </div>
@@ -54,7 +55,7 @@
                 <li><a href="">home decor</a></li>
                 <li><a href="">curtains & window</a></li>
                 <li><a href="/html files/furniture.html">furniture</a></li>
-                <li><a href="">helath & beauty</a></li>
+                <li><a href="">health & beauty</a></li>
                 <li><a href="">outdoor</a></li>
                 <li><a href="">more</a></li>
                 <li><a href="">gifts</a></li>
@@ -93,10 +94,23 @@
     <div id="bottompart">
         <div id="filterPart">
             <h3>Filter your Products</h3>
-            <br><br>
             <hr>
             <br>
+            <h3>Sort by Price</h3>
+            <select name="" id="priceSort">
+               <option value="">sort by price</option>
+               <option value="Low-to-high">Low-to-high</option>
+               <option value="High-to-low">High-to-low</option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            
             <h3>Filter by Category</h3>
+
+            <input type="radio" id="All" value="All" name="Category">
+            <label for="ALl">All</label> <br><br>
+
             <input type="radio" id="Beds" value="Beds" name="Category">
             <label for="Beds">Beds</label> <br><br>
 
@@ -110,32 +124,153 @@
 
             <h3>Filter by Brand</h3>
 
-            <input type="checkbox" id="VIDEXL">
-            <label for="VIDEXL">VIDEXL</label><br><br>
+            <input type="checkbox" id="VIDAXL" value="VIDAXL">
+            <label for="VIDAXL">VIDAXL</label><br><br>
             
-            <input type="checkbox" id="GYMAX">
+            <input type="checkbox" id="GYMAX" value="GYMAX">
             <label for="GYMAX">GYMAX</label><br><br>
 
-            <input type="checkbox" id="INTEX">
+            <input type="checkbox" id="INTEX" value="INTEX">
             <label for="INTEX">INTEX</label> <br><br>
 
-            <input type="checkbox" id="COSTWAY">
+            <input type="checkbox" id="COSTWAY" value="COSTWAY">
             <label for="COSTWAY">COSTWAY</label> <br> <br> <br>
 
             <hr>
 
-            <h3>Sort by Price</h3>
-             <select name="" id="priceSort">
-                <option value="">sort by price</option>
-                <option value="Low-to-high">Low-to-high</option>
-                <option value="High-to-low">High-to-low</option>
-             </select>
-
-            
-            
-
+        
         </div>
         <div id="cards"></div>
+    </div>
+
+    <div class="bottomPart">
+        <div>
+            <h4>LET'S CONNECT</h3>
+
+                <div class="social">
+                   <a href=""><img src="/images/icons8-facebook-50.png" alt=""></a>
+                   <a href=""><img src="/images/icons8-twitter-30.png" alt=""></a> 
+                   <a href=""><img src="/images/icons8-instagram-24.png" alt=""></a>
+                   <a href=""><img src="/images/icons8-pinterest-30.png" alt=""></a>
+                   <a href=""><img src="/images/icons8-youtube-30.png" alt=""></a>
+                   
+                </div>
+
+                <h4>
+                    SIGN UP FOR EMAILS
+                </h4>
+
+                <P>
+                    We'll let you know about the latest deals & newest products.  
+                     <b> New subscribers will get 20% off single item</b>
+                </P>
+
+                <input type="email" name="" id="email" placeholder="*enter email">
+                <br>
+                <br>
+                <button id="get_offer">get Offer</button>
+
+                <h4>DOWNLOAD OUR APP</h4>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jbc5YzCU704Bizt54rYS71ON49lJZkBEuw&usqp=CAU" alt="">
+                <br>
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBELGb9rSKKsb76jRHRc7ul4zP3htAx_vw-g&usqp=CAU" alt="">
+
+                <h4>GET IN TOUCH</h4>
+
+                <p>Help</p>
+                <p>Update Your Email Preference</p>
+        </div>
+
+        <div>
+
+            <h4>SHOPPING & RETURNS</h4>
+
+            <ul>
+                <li><a href="">Track order</a></li>
+                <li><a href="">Shipping Info</a></li>
+                <li><a href="">Store Pickup</a></li>
+                <li><a href="">Same Day delivery</a></li>
+                <li><a href="">Returns</a></li>
+                <li><a href="">Product Recall Information</a></li>
+                <li><a href="">Rebates</a></li>
+                <li><a href="">Price Match Promise</a></li>
+                <li><a href="">Marketplace</a></li>
+
+            </ul>
+
+            <h4>SHOPPING TOOLS</h4>
+
+            <ul>
+                <li><a href="">Ideals Boards</a></li>
+                <li><a href="">Shop College</a></li>
+                <li><a href="">Shop Movers</a></li>
+                <li><a href="">Shop Catelogs</a></li>
+                <li><a href="">Shop by Brand</a></li>
+                <li><a href="">Shop Clearance & Savings</a></li>
+                <li><a href="">Shop Subscriptions</a></li>
+                <li><a href="">Buying Guides</a></li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h4>SERVICES & SOLUTIONS</h4>
+
+            <ul>
+                <li><a href="">Events</a></li>
+                <li><a href="">Gift Cards</a></li>
+                <li><a href="">Check Reward Certificate Balance</a></li>
+                <li><a href="">Pay with Afterpay</a></li>
+            </ul>
+
+            <h4>REGISTRY</h4>
+
+            <ul>
+                <li><a href="">Find a Registry</a></li>
+                <li><a href="">Manage Your Registry</a></li>
+                <li><a href="">Wedding Registry</a></li>
+                <li><a href="">Baby Registry</a></li>
+                <li><a href="">Housewarming</a></li>
+                <li><a href="">College Registry</a></li>
+            </ul>
+
+            <h4>SAVINGS</h4>
+
+            <ul>
+                <li><a href="">Sign Up for Coupons</a></li>
+                <li><a href="">View My Offers</a></li>
+                <li><a href="">Welcome Rewards</a></li>
+                <li><a href="">Sign Up for Welcome Rewards+</a></li>
+                <li><a href="">My Rewards</a></li>
+            </ul>
+        </div>
+
+        <div>
+
+            <h4>COMAPANY INFO</h4>
+
+            <ul>
+                <li><a href="">Advertise with Us</a></li>
+                <li><a href="">Marketplace Sellers</a></li>
+                <li><a href="">Potential Suppliers</a></li>
+                <li><a href="">Business Direct</a></li>
+                <li><a href="">Environmental Social Governance</a></li>
+                <li><a href="">Media Relations</a></li>
+                <li><a href="">Investor Relations</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Account Security</a></li>
+                <li><a href="">Terms of Use</a></li>
+            </ul>
+
+            <h4>CREDIT CARD</h4>
+
+            <li><a href="">Apply for credit card</a></li>
+            <li><a href="">Pay Your Mastercard Credit Card</a></li>
+            <li><a href="">Pay Your Store Credit Card</a></li>
+         
+        </div>
     </div>
 </body>
 <script src="/script/furniture.js"></script>

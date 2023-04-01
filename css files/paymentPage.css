@@ -1,0 +1,60 @@
+body{
+    background-color: #b5f4f5;
+}
+
+#cont{
+    width: 30%;
+    margin: auto;
+    /* text-align: center; */
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#logo{
+    text-align: center;
+}
+
+#logo img{
+    width: 40%;
+}
+
+p{
+    font-size: 30px ;
+}
+
+input{
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+#payment{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    gap: 50px;
+
+}
+
+input[type='submit']{
+    background-color: rgb(0, 162, 216);
+    display: block;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type='submit']:hover{
+    background-color:rgb(41, 95, 187) ;
+}
