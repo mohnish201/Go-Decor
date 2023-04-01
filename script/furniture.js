@@ -219,11 +219,6 @@ let FurnitureData =[
         price:219.99,
         Image: "https://b3h2.scene7.com/is/image/BedBathandBeyond/mktplace-p-58b6ef63-4aaa-41c9-b9ed-a0930a9f8600?$imagePLP$&wid=363&hei=363"
     },
-
-
-
-
-
     
 ]
 
@@ -273,6 +268,7 @@ function display(data){
     })
 
 }
+//check cart function
 display(FurnitureData);
 
 function checkCart(FurnitureData){
@@ -284,4 +280,200 @@ function checkCart(FurnitureData){
    return false
   
 }
+//sorting
+let sorting = document.getElementById("priceSort")
+
+let sortedData=[];
+sorting.addEventListener("change", function(){
+    if(sorting.value === ""){
+        display(FurnitureData)
+    }
+    else if(sorting.value === "Low-to-high"){
+        sortedData = [...FurnitureData]
+        sortedData.sort((a,b)=>{
+            return a.price - b.price
+        })
+        display(sortedData)
+    }
+
+    else if(sorting.value === "High-to-low"){
+        sortedData = [...FurnitureData]
+        sortedData.sort((a,b)=>{
+            return b.price - a.price
+        })
+        display(sortedData)
+    }
+    
+})
+//serach filter
+let search = document.getElementById("search");
+
+search.addEventListener("input", function(){
+    let filtered = FurnitureData.filter(function(el){
+        if(el.category.toUpperCase().includes(search.value.toUpperCase())=== true){
+            return true
+        }
+        else{
+            return false;
+        }
+    })
+    display(filtered)
+})
+
+//filter by brand
+let filterProducts = [...FurnitureData]
+
+let brand1 = document.getElementById("VIDAXL");
+let brand2 = document.getElementById("GYMAX");
+let brand3 = document.getElementById("INTEX");
+let brand4 = document.getElementById("COSTWAY")
+
+
+brand1.addEventListener("click", function(){
+
+   if(brand1.checked){
+           let checkFilter1 = filterProducts.filter((el)=>{
+            if(el.brand === brand1.value){
+                return true
+            }
+            else{
+                return false
+            }
+           })
+           display(checkFilter1)
+   }
+   else if(brand2.checked){
+
+    display(checkFilter2)
+   }
+   else{
+    display(FurnitureData)
+   }
+} )
+
+
+brand2.addEventListener("click", function(){
+
+       if(brand2.checked){
+               let checkFilter2 = filterProducts.filter((el)=>{
+                if(el.brand === brand2.value){
+                    return true
+                }
+                else{
+                    return false
+                }
+               })
+               display(checkFilter2)
+       }
+    
+       else{
+        display(FurnitureData)
+       }
+    } )
+
+
+    
+brand3.addEventListener("click", function(){
+
+    if(brand3.checked){
+            let checkFilter3 = filterProducts.filter((el)=>{
+             if(el.brand === brand3.value){
+                 return true
+             }
+             else{
+                 return false
+             }
+            })
+            display(checkFilter3)
+    }
+   
+    else{
+     display(FurnitureData)
+    }
+ } )
+
+ brand4.addEventListener("click", function(){
+
+    if(brand4.checked){
+            let checkFilter4 = filterProducts.filter((el)=>{
+             if(el.brand === brand4.value){
+                 return true
+             }
+             else{
+                 return false
+             }
+            })
+            display(checkFilter4)
+    }
+   
+    else{
+     display(FurnitureData)
+    }
+ } )
+
+ //filter by category
+ let All = document.getElementById("All");
+ let category1 = document.getElementById("Beds");
+ let category2 = document.getElementById("Sofas");
+ let category3 = document.getElementById("Chairs");
+
+ All.addEventListener("click", function(){
+    display(FurnitureData)
+ })
+ category1.addEventListener("click", function(){
+
+  
+            let checkFilter5 = filterProducts.filter((el)=>{
+             if(el.category === category1.value){
+                 return true
+             }
+             else{
+                 return false
+             }
+            })
+            display(checkFilter5)
+    
+
+ } )
+
+ category2.addEventListener("click", function(){
+
+  
+    let checkFilter6 = filterProducts.filter((el)=>{
+     if(el.category === category2.value){
+         return true
+     }
+     else{
+         return false
+     }
+    })
+    display(checkFilter6)
+
+
+} )
+
+
+category3.addEventListener("click", function(){
+
+  
+    let checkFilter7 = filterProducts.filter((el)=>{
+     if(el.category === category3.value){
+         return true
+     }
+     else{
+         return false
+     }
+    })
+    display(checkFilter7)
+
+
+} )
+
+
+
+
+
+
+
+
 

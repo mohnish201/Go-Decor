@@ -58,16 +58,21 @@ nav{
     padding: 5px;
 }
 
+
 .leftmiddlenav{
-    display: flex;
-    width: 20%;
-    align-items: center;
-    box-sizing: border-box;
+  display: flex;
+  width: 15%;
+  align-items: center;
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  gap: 10px;
 }
 
 
 .leftmiddlenav img{
-    width: 40%;
+  width: 100%;
+  border-radius: 50%;
+  /* border: 2px solid black; */
 
 }
 
@@ -100,12 +105,18 @@ nav{
     width: 50%;
 }
 
+.rightmiddlenav a{
+  text-decoration: none;
+  color: black;
+}
+
 #bottomNav{
     background-color: #f8f8f8;
     width: 100%;
 }
 
  #bottomNav> ul {
+    background-color: #eae7e7;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -120,9 +131,15 @@ nav{
   
   #bottomNav li a {
     display: block;
+    color: white;
+    text-align: center;
     padding: 15px;
     text-decoration: none;
     color: rgb(57, 55, 55);
+  }
+  #bottomNav li a:hover {
+    background-color:  rgb(35, 87, 164);
+    color: white;
   }
 
 
@@ -148,9 +165,10 @@ nav{
 #bottompart{
     display: flex;
     margin-top: 100px;
-    gap: 100px;
-    background-color: #f1f1f1;
+    gap: 50px;
+    /* background-color: #f1f1f1; */
 }
+
 
 #cards{
     width: 70%;
@@ -158,7 +176,8 @@ nav{
     grid-template-columns: repeat(3,1fr);
     gap: 40px;
     background-color: #f1f1f1;
-    padding: 100px 100px 30px 20px;
+    margin: auto;
+    padding: 50px ;
 
 }
 
@@ -196,9 +215,10 @@ nav{
     width: 20%;
     background-color: #f1f1f1;
     padding: 20px 30px 20px 20px;
+    height: 40%;
 }
 
-a{
+#topPart a{
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -207,4 +227,173 @@ a{
 label{
     font-size: 20px;
 }
+#priceSort{
+    font-size: 20px;
+    padding: 5px;
+}
 
+.bottomPart{
+    display: flex;
+    background-color: #f8f8f8;
+    border-top: 1px solid rgb(147, 146, 146);
+    margin-top: 30px;
+
+  }
+
+  .bottomPart  h4 ~ img{
+    width: 40%;
+  }
+
+  .bottomPart >div{
+    margin-right: 20px;
+    width: 20%;
+    padding: 10px;
+  }
+  .social {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+  }
+  .social img{
+    width: 100%;
+  }
+ 
+  .bottomPart li{
+    list-style-type: none;
+    line-height: 30px;
+    color: rgb(70, 69, 69);
+  }
+
+  .bottomPart li a{
+    text-decoration: none;
+    color:rgb(70, 69, 69);
+  }
+
+  .bottomPart li a:hover{
+    background-color: rgb(89, 89, 89);
+    color: white;
+     }
+
+  .bottomPart ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  #email{
+    padding: 15px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgb(59, 57, 57);
+    background-color: #f8f8f8;
+  }
+
+  #get_offer{
+    padding: 15px;
+    background-color: rgb(0, 110, 154);
+    color: white;
+    border-radius: 10px;
+    width: 90%;
+    border: none;
+    font-size: 15px;
+  }
+
+  #get_offer:hover{
+    background-color: rgb(49, 49, 225);
+  }
+
+
+  @media only screen and (max-width:399px){
+    .middlePart_1{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* #topRight{
+      display: none;
+    } */
+
+    .leftmiddlenav h3{
+       font-size: 12px;
+    }
+
+    #bottomNav{
+      display: none;
+    }
+
+    #search{
+      width: 40%;
+      font-size: 10px;
+      padding: 5px;
+  }
+  #search a img{
+    width: 100%;
+  }
+    .rightmiddlenav {
+      width: 50%;
+      gap: 20px;
+      border: 2px solid black;
+    }
+    .rightmiddlenav img{
+      width: 60%;
+  }
+  
+  .rightmiddlenav a{
+      font-size: 10px;
+   }
+    #topRight{
+      width: 80%;
+      border: 2px solid black;
+      font-size: 10px;
+  }
+
+  .bottomPart{
+    display: none;
+  }
+
+  #cards{
+    grid-template-columns: repeat(1,1fr);
+}
+}
+
+@media only screen and (min-width:400px) and (max-width:1200px){
+
+  #topRight{
+    font-size: 12px;
+  }
+
+
+  .rightmiddlenav{
+    font-size: 10px;
+  }
+
+ 
+    .topPart img {
+      width: 100%;
+    }
+   
+    #search{
+      width: 60%;
+      font-size: 15px;
+      padding: 5px;
+      
+  }
+  
+
+    .bottomPart li{
+      line-height: 20px;
+    }
+
+  
+    .social{
+      gap: 10px;
+    }
+
+   .bottomNav{
+    display: none ;
+   }
+
+    #cards{
+      grid-template-columns: repeat(2,1fr);
+  }
+}

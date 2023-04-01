@@ -62,16 +62,21 @@ nav{
     padding: 5px;
 }
 
+
 .leftmiddlenav{
-    display: flex;
-    width: 20%;
-    align-items: center;
-    box-sizing: border-box;
+  display: flex;
+  width: 15%;
+  align-items: center;
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  gap: 10px;
 }
 
 
 .leftmiddlenav img{
-    width: 40%;
+  width: 100%;
+  border-radius: 60%;
+  /* border: 2px solid black; */
 
 }
 
@@ -103,31 +108,41 @@ nav{
 .rightmiddlenav img{
     width: 50%;
 }
-
+.rightmiddlenav a{
+   text-decoration: none;
+   color: black;
+}
 #bottomNav{
     background-color: #f8f8f8;
     width: 100%;
 }
 
- #bottomNav> ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
-    padding-left: 50px;
-  }
-  
-  #bottomNav li {
-    float: left;
-  }
-  
-  #bottomNav li a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: rgb(57, 55, 55);
-  }
+#bottomNav> ul {
+  background-color: #eae7e7;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  padding-left: 50px;
+}
+
+#bottomNav li {
+  float: left;
+}
+
+#bottomNav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(57, 55, 55);
+}
+#bottomNav li a:hover {
+  background-color:  rgb(35, 87, 164);
+  color: white;
+}
 
   .topPart{
     text-align: center;
@@ -268,18 +283,50 @@ nav{
 
  
   
-  @media only screen and (min-width:200px) and (max-width:399px){
+  @media only screen and (max-width:399px){
     .middlePart_1{
       grid-template-columns: repeat(2, 1fr);
     }
 
-    #topRight{
+    /* #topRight{
       display: none;
+    } */
+
+    .leftmiddlenav h3{
+       font-size: 12px;
     }
 
-    #topLeft{
-      width: 100%;
+    #search{
+      width: 40%;
+      font-size: 10px;
+      padding: 5px;
+  }
+  #search a img{
+    width: 100%;
+  }
+    .rightmiddlenav {
+      width: 50%;
+      gap: 20px;
+      border: 2px solid black;
     }
+    .rightmiddlenav img{
+      width: 60%;
+  }
+  
+  .rightmiddlenav a{
+      font-size: 10px;
+   }
+    #topRight{
+      width: 80%;
+      border: 2px solid black;
+      font-size: 10px;
+  }
+
+    /* #topLeft{
+      width: 100%;
+     
+    } */
+
 
     .middlePart_4{
       grid-template-columns: repeat(2, 1fr);
@@ -304,12 +351,7 @@ nav{
       font-size: 30px;
     }
 
-    #search{
-      width: 50%;
-      font-size: 10px;
-      padding: 5px;
-      
-  }
+ 
   }
 
   @media only screen and (min-width:400px) and (max-width:1200px){
@@ -358,7 +400,7 @@ nav{
         gap: 10px;
       }
 
-      .bottomPart>{
+      .bottomPart{
         display: none;
       }
   }
