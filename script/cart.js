@@ -2,16 +2,19 @@ let cartData = JSON.parse(localStorage.getItem("cartData")) || []
 let quantity = document.getElementById("quantity");
 let cartTotal = document.querySelector("#total");
 let subtotal = document.getElementById("subtotal");
-// let emptyCart = document.getElementById("emptyCart")
+let checkoutBtn = document.getElementById("checkoutBtn");
+let checkout = document.getElementById("checkout");
 
-
-   
+  
 display(cartData)
 
 function display(data){
+    
     cards.innerHTML = "";
 
     data.forEach((el)=>{
+
+        
         let div = document.createElement("div");
         let image = document.createElement("img");
         let brand = document.createElement("h3");
@@ -79,9 +82,31 @@ function display(data){
         div.append(image,brand,category,description, price, increment, quantity, decrement, remove);
         cards.append(div)
     })
-
+   
     quantity.innerText = cartData.length;
+    if(quantity.innerText === "0"){
+        checkoutBtn.style.cursor = "not-allowed";
+    }
+  
 }
+
+
+let loginData = JSON.parse(localStorage.getItem("loginData"));
+
+
+
+let signupText = document.getElementById("signupText");
+
+
+loginData.forEach((el)=>{
+    signupText.innerText = el.name;
+     })
+
+
+
+
+
+
 
 
 

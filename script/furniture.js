@@ -305,7 +305,7 @@ sorting.addEventListener("change", function(){
     }
     
 })
-//serach filter
+//search filter
 let search = document.getElementById("search");
 
 search.addEventListener("input", function(){
@@ -468,6 +468,25 @@ category3.addEventListener("click", function(){
 
 
 } )
+
+
+let loginData = JSON.parse(localStorage.getItem("loginData"));
+
+
+
+let signupText = document.getElementById("signupText");
+
+
+loginData.forEach((el)=>{
+    signupText.innerText = el.name;
+     })
+
+
+
+
+
+
+
 
 
 

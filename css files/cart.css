@@ -195,6 +195,9 @@ nav{
     background-color: white;
     padding: 50px 20px 30px 20px;
 }
+#emptycart{
+    text-align: center;
+}
 #cards img{
     width: 100%;
 }
