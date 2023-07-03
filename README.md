@@ -3,7 +3,7 @@
 <img src="./images/GO DECOR (1).gif" height="100" width="180">
 
 
- <b>Bed Bath & Beyond</b> is a popular retail store in the United States that offers a wide range of products for the home, including bedding, bath essentials, kitchen appliances, home decor, and more. The Bed Bath & Beyond website provides customers with a convenient and seamless online shopping experience.
+ <b>Go Decor</b> is a popular retail store in the United States that offers a wide range of products for the home, including bedding, bath essentials, kitchen appliances, home decor, and more. The Bed Bath & Beyond website provides customers with a convenient and seamless online shopping experience.
 
  **Deployed Link** - **https://dainty-faloodeh-a781a1.netlify.app**
 
